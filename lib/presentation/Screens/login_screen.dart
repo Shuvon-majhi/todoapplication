@@ -10,7 +10,7 @@ class loginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppbarWidget(),
-      body: backgroundWidget(
+      body: backgroundWidget(   
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Column(
