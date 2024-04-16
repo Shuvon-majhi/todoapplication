@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoapplication/presentation/Screens/todo_screen.dart';
 import 'package:todoapplication/presentation/Widgets/appbar_widget.dart';
 import 'package:todoapplication/presentation/Widgets/background_widget.dart';
 
@@ -41,7 +42,14 @@ class loginScreen extends StatelessWidget {
                 height: 10,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const todoScreen(),
+                    ),
+                  );
+                },
                 child: const Text("Log In"),
               ),
             ],

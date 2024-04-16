@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:todoapplication/presentation/Screens/login_screen.dart';
-import 'package:todoapplication/presentation/Screens/todo_screen.dart';
 
 class todoApp extends StatelessWidget {
   const todoApp({super.key});
@@ -10,7 +9,7 @@ class todoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const todoScreen(),
+      home: const loginScreen(),
       theme: ThemeData(
         inputDecorationTheme: InputDecorationTheme(
           fillColor: Colors.white,
